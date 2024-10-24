@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesAlumnoLogin.css">
+    <title>Document</title>
+</head>
+<body> 
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div id="errorMessage"></div>
+            <br>
+            <button id="registerButton">Registrarse</button>
+            <br>
+            <br>
+            <a href="listaAlumno.html" target="_blank">
+            <button id="showStudentsButton">Mostrar Alumnos</button>
+            </a>
+        </div>
+
+        <script>
+            document.getElementById('registerButton').addEventListener('click', function() {
+                window.location.href = 'alumnoRegistro.html';
+            });
+       /*     document.getElementById('showStudentsButton').addEventListener('click', function() {
+            window.location.href = 'listaAlumno.html';
+            });*/
+        </script>
+    
+        <script src="login.js"></script>
+
+</body>
+</html>

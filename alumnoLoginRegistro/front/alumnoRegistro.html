@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesAlumnoRegistro.css">
+    <title>Registro de Alumno</title>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Registro de Alumno</h1>
+        <form id="registerForm">
+            <input type="text" id="nombre_completo" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="text" id="grado" placeholder="Grado" required>
+
+            <label>
+                <input type="checkbox" id="es_delegado"> ¿Eres delegado?
+            </label>
+
+            <button type="submit">Registrarse</button>
+        </form>
+        <div id="registerErrorMessage"></div>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+</html>
